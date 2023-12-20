@@ -44,6 +44,9 @@ class Ber:
                 osszeg = osszeg + int(dolgozo.fizetes)
         print("Hatvaniak fizetése:", osszeg)
     
+    def masik_fuggveny(self):
+        pass
+    
 # class Ber vége
 
 ber = Ber()
