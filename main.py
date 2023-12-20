@@ -35,12 +35,18 @@ class Ber:
                 max_szolnoki = szolnoki
         
         print(max_szolnoki.szuletes)
-        
     
+    # Hatvani dolgozók fizetése:
+    def hatvani_fizetes(self):
+        osszeg = 0
+        for dolgozo in self.dolgozoLista:
+            if dolgozo.telepules == "Hatvan":
+                osszeg = osszeg + int(dolgozo.fizetes)
+        print("Hatvaniak fizetése:", osszeg)
     
 # class Ber vége
 
 ber = Ber()
 ber.olvas_fajl()
 ber.szolnoki()
-
+ber.hatvani_fizetes()
